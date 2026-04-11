@@ -1,0 +1,77 @@
+.champion-card {
+  width: 450px;
+  height: 500px;
+  position: relative;
+  pointer-events: none;
+}
+.champion-card img {
+  max-width: 100%;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.champion-card:hover img {
+  opacity: 1;
+}
+.champion-card .frame,
+.champion-card .name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.champion-card:hover .frame::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+.champion-card .frame {
+  width: 70%;
+  height: 80%;
+  overflow: hidden;
+  bottom: 0;
+  pointer-events: visible;
+  background-position: top !important;
+}
+.champion-card .frame::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 150%;
+  background-image: linear-gradient(90deg, #cd6e36, #d400ff);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.champion-card .frame .bg {
+  position: absolute;
+  inset: 4px;
+}
+.champion-card .frame .bg::before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.champion-card .frame:hover .frame .bg::before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.champion-card .name {
+  height: -moz-max-content;
+  height: max-content;
+  bottom: 4px;
+  width: calc(70% - 8px);
+  text-align: center;
+  padding: 1rem 0;
+  background-color: rgba(66, 103, 178, 0.5);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}/*# sourceMappingURL=championCard.css.map */

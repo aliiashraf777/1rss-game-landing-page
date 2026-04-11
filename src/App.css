@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+html,
+body {
+  font-size: 100%;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: "Rowdies", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+iframe {
+  border: none;
+}
+
+#root,
+.App {
+  height: 100%;
+}
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: relative;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.main-color {
+  color: #d0a85c;
+}
+
+.second-color {
+  color: #4267b2;
+}
+
+.title {
+  font-weight: 700;
+}
+.title span {
+  font-size: 3rem;
+}
+.title h2 {
+  font-size: 5rem;
+  font-size: 4rem;
+  line-height: 5rem;
+  line-height: 6rem;
+}
+
+.container {
+  max-width: 1670px;
+  margin: auto;
+}
+
+.m-t-4 {
+  margin-top: 4rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.swiper,
+.swiper-slide {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: unset;
+  margin: 10px;
+  background-color: transparent;
+  position: relative;
+}
+.swiper-pagination-bullet::before {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #4267b2;
+}
+.swiper-pagination-bullet-active {
+  background-color: transparent;
+}
+.swiper-pagination-bullet-active::before {
+  background-color: #d0a85c;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 1rem;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 3s ease infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}/*# sourceMappingURL=App.css.map */

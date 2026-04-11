@@ -1,0 +1,27 @@
+.btn {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 1.5rem 5rem;
+  padding: 1.5rem 4.5rem;
+  font-family: "Rowdies", cursive;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.btn-main {
+  background-color: #d0a85c;
+  transition: all 0.3s ease;
+}
+.btn-main:hover {
+  background-color: #4267b2;
+}
+.btn-second {
+  background-color: #4267b2;
+  transition: all 0.3s ease;
+}
+.btn-second:hover {
+  background-color: #d0a85c;
+}/*# sourceMappingURL=button.css.map */

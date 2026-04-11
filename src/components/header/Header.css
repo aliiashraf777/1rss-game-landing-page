@@ -1,0 +1,63 @@
+.header {
+  height: 7rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  pointer-events: none;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 1.5rem;
+  padding: 1rem 1.5rem;
+}
+.header__logo {
+  width: 140px;
+  pointer-events: visible;
+}
+.header__logo img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.header__logo img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav li ~ li {
+  margin-left: 1rem;
+}
+.header__nav a {
+  display: inline-block;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  position: relative;
+  pointer-events: visible;
+}
+.header__nav a::before, .header__nav a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #d0a85c;
+  transition: width 0.3s ease;
+}
+.header__nav a:hover::before, .header__nav a:hover::after {
+  width: 50%;
+}
+.header__nav a::before {
+  left: 0;
+  top: 0;
+}
+.header__nav a::after {
+  right: 0;
+  bottom: 0;
+}/*# sourceMappingURL=Header.css.map */

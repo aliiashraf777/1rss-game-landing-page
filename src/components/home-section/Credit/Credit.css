@@ -1,0 +1,38 @@
+.credit {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.credit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.credit__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+.credit__content {
+  position: relative;
+  z-index: 2;
+}
+.credit__content .title {
+  text-align: center;
+}
+.credit__content .btns > * ~ * {
+  margin-left: 1rem;
+}/*# sourceMappingURL=Credit.css.map */

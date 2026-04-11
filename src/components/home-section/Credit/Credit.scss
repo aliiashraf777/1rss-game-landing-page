@@ -1,0 +1,43 @@
+@use '../../../scss/' as *;
+
+.credit {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    @include flex(center, center);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        z-index: 1;
+    }
+
+    // video {
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+
+        .title {
+            text-align: center;
+        }
+
+        .btns>*~* {
+            margin-left: 1rem;
+        }
+    }
+}
