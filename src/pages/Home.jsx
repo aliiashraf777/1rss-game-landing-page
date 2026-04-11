@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Mousewheel, Pagination } from 'swiper/modules';
- 
+  
 import { championsData } from '../assets/dummy';
 
 import {
