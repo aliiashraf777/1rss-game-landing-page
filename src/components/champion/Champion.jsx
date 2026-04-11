@@ -1,6 +1,6 @@
 import HomeSection from '../home-section/HomeSection';
 import './champion.scss';
-
+ 
 import { bg2 } from '../../assets/images';
 import { championsData } from '../../assets/dummy';
 
