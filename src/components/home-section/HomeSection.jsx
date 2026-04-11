@@ -1,7 +1,7 @@
 import Section, { SectionContent } from "../section/Section"
 
 const HomeSection = (props) => {
-    return (
+    return ( 
         <Section
             className={props.className}
         >
