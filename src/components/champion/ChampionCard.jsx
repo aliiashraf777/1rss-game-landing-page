@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import './championCard.scss';
-
+ 
 const ChampionCard = (props) => {
 
     const cardRef = useRef(null);
