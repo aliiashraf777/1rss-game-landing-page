@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import './credit.scss';
+import './Credit.scss';
 
 import { bgVideo } from '../../../assets/videos';
 import Button from '../../button/Button';
