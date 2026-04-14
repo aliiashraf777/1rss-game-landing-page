@@ -2,8 +2,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-18-blue?logo=react" />
-  <img src="https://img.shields.io/badge/TailwindCSS-3-38B2AC?logo=tailwind-css" />
+  <img src="https://img.shields.io/badge/Vite-4-purple?logo=vite" />
   <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript" />
+  <img src="https://img.shields.io/badge/Sass-Preprocessor-cc6699?logo=sass" />
   <img src="https://img.shields.io/badge/Status-Completed-success" />
   <img src="https://img.shields.io/github/stars/aliiashraf777/1rss-game-landing-page?style=social" />
 </p>
